@@ -1,4 +1,4 @@
 export const environment = {
   production: false,
-  gatewayUrl: 'http://localhost:8080'
+  gatewayUrl: 'https://backendhotelmanagement-backend.up.railway.app/'
 };
