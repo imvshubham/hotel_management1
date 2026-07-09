@@ -1,0 +1,5 @@
+com/hotel/history/dto/ReservationHistoryDto.class
+com/hotel/history/HistoryServiceApplication.class
+com/hotel/history/client/ReservationClient.class
+com/hotel/history/dto/ReservationHistoryDto$ReservationHistoryDtoBuilder.class
+com/hotel/history/controller/HistoryController.class

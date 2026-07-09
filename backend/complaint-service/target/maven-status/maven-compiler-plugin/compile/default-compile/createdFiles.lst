@@ -1,0 +1,5 @@
+com/hotel/complaint/repository/ComplaintRepository.class
+com/hotel/complaint/entity/Complaint$ComplaintBuilder.class
+com/hotel/complaint/ComplaintServiceApplication.class
+com/hotel/complaint/entity/Complaint.class
+com/hotel/complaint/controller/ComplaintController.class

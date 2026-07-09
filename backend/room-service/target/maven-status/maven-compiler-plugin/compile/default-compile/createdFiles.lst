@@ -1,0 +1,5 @@
+com/hotel/room/controller/RoomController.class
+com/hotel/room/RoomServiceApplication.class
+com/hotel/room/entity/Room.class
+com/hotel/room/repository/RoomRepository.class
+com/hotel/room/entity/Room$RoomBuilder.class

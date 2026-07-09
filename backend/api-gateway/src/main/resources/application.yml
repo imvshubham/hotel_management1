@@ -1,0 +1,53 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: api-gateway
+  cloud:
+    gateway:
+      globalcors:
+        cors-configurations:
+          '[/**]':
+            allowedOrigins: "http://localhost:4200"
+            allowedMethods:
+              - GET
+              - POST
+              - PUT
+              - DELETE
+              - OPTIONS
+            allowedHeaders: "*"
+            allowCredentials: true
+      routes:
+        - id: auth-service
+          uri: lb://auth-service
+          predicates:
+            - Path=/auth/**
+        - id: room-service
+          uri: lb://room-service
+          predicates:
+            - Path=/rooms/**
+        - id: reservation-service
+          uri: lb://reservation-service
+          predicates:
+            - Path=/reservations/**
+        - id: billing-service
+          uri: lb://billing-service
+          predicates:
+            - Path=/billing/**
+        - id: complaint-service
+          uri: lb://complaint-service
+          predicates:
+            - Path=/complaints/**
+        - id: history-service
+          uri: lb://history-service
+          predicates:
+            - Path=/history/**
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+
+jwt:
+  secret: 9a4f2c8d3b7a1e5f8c6d4b2a1f0e9d8c7b6a5e4d3c2b1a0f9e8d7c6b5a4f3e2d1

@@ -1,0 +1,127 @@
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.4.2)
+
+2026-05-25T02:12:02.116+05:30  INFO 45806 --- [room-service] [           main] com.hotel.room.RoomServiceApplication    : Starting RoomServiceApplication v1.0.0 using Java 21.0.2 with PID 45806 (/Users/subodhsingh/Downloads/HotelAngular/backend/room-service/target/room-service-1.0.0.jar started by subodhsingh in /Users/subodhsingh/Downloads/HotelAngular/backend)
+2026-05-25T02:12:02.118+05:30  INFO 45806 --- [room-service] [           main] com.hotel.room.RoomServiceApplication    : No active profile set, falling back to 1 default profile: "default"
+2026-05-25T02:12:03.545+05:30  INFO 45806 --- [room-service] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-25T02:12:03.782+05:30  INFO 45806 --- [room-service] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 217 ms. Found 1 JPA repository interface.
+2026-05-25T02:12:04.242+05:30  INFO 45806 --- [room-service] [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=0d588690-b320-32dc-b657-a8b2a3ac2f49
+2026-05-25T02:12:04.852+05:30  INFO 45806 --- [room-service] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8085 (http)
+2026-05-25T02:12:04.865+05:30  INFO 45806 --- [room-service] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-05-25T02:12:04.865+05:30  INFO 45806 --- [room-service] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2026-05-25T02:12:04.895+05:30  INFO 45806 --- [room-service] [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-05-25T02:12:04.895+05:30  INFO 45806 --- [room-service] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2730 ms
+2026-05-25T02:12:05.145+05:30  INFO 45806 --- [room-service] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-05-25T02:12:05.228+05:30  INFO 45806 --- [room-service] [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.5.Final
+2026-05-25T02:12:05.265+05:30  INFO 45806 --- [room-service] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-05-25T02:12:05.754+05:30  INFO 45806 --- [room-service] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-25T02:12:05.778+05:30  INFO 45806 --- [room-service] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-05-25T02:12:06.221+05:30  INFO 45806 --- [room-service] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:roomdb user=SA
+2026-05-25T02:12:06.222+05:30  INFO 45806 --- [room-service] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-05-25T02:12:06.246+05:30  WARN 45806 --- [room-service] [           main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-25T02:12:06.288+05:30  INFO 45806 --- [room-service] [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-25T02:12:07.715+05:30  INFO 45806 --- [room-service] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+Hibernate: create table rooms (id varchar(255) not null, price float(53) not null, status varchar(255) not null, type varchar(255) not null, primary key (id))
+2026-05-25T02:12:07.883+05:30  INFO 45806 --- [room-service] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-25T02:12:08.433+05:30  WARN 45806 --- [room-service] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-25T02:12:09.022+05:30  INFO 45806 --- [room-service] [           main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:roomdb'
+2026-05-25T02:12:09.315+05:30  INFO 45806 --- [room-service] [           main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2026-05-25T02:12:09.405+05:30  WARN 45806 --- [room-service] [           main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-05-25T02:12:09.432+05:30  INFO 45806 --- [room-service] [           main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-05-25T02:12:09.482+05:30  INFO 45806 --- [room-service] [           main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-05-25T02:12:09.488+05:30  INFO 45806 --- [room-service] [           main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-05-25T02:12:09.496+05:30  INFO 45806 --- [room-service] [           main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-05-25T02:12:09.496+05:30  INFO 45806 --- [room-service] [           main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-05-25T02:12:09.496+05:30  INFO 45806 --- [room-service] [           main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-05-25T02:12:09.496+05:30  INFO 45806 --- [room-service] [           main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-05-25T02:12:09.496+05:30  INFO 45806 --- [room-service] [           main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-05-25T02:12:09.496+05:30  INFO 45806 --- [room-service] [           main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2026-05-25T02:12:09.496+05:30  INFO 45806 --- [room-service] [           main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-05-25T02:12:10.355+05:30  INFO 45806 --- [room-service] [           main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-05-25T02:12:10.357+05:30  INFO 45806 --- [room-service] [           main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2026-05-25T02:12:10.360+05:30  INFO 45806 --- [room-service] [           main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-05-25T02:12:10.362+05:30  INFO 45806 --- [room-service] [           main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1779655330361 with initial instances count: 0
+2026-05-25T02:12:10.368+05:30  INFO 45806 --- [room-service] [           main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application ROOM-SERVICE with eureka with status UP
+2026-05-25T02:12:10.370+05:30  INFO 45806 --- [room-service] [           main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1779655330370, current=UP, previous=STARTING]
+2026-05-25T02:12:10.373+05:30  INFO 45806 --- [room-service] [foReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ROOM-SERVICE/192.168.1.26:room-service:8085: registering service...
+2026-05-25T02:12:10.388+05:30  INFO 45806 --- [room-service] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8085 (http) with context path '/'
+2026-05-25T02:12:10.390+05:30  INFO 45806 --- [room-service] [           main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8085
+2026-05-25T02:12:10.423+05:30  INFO 45806 --- [room-service] [foReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ROOM-SERVICE/192.168.1.26:room-service:8085 - registration status: 204
+2026-05-25T02:12:10.425+05:30  INFO 45806 --- [room-service] [           main] com.hotel.room.RoomServiceApplication    : Started RoomServiceApplication in 9.184 seconds (process running for 10.252)
+Hibernate: select count(*) from rooms r1_0
+Hibernate: select r1_0.id,r1_0.price,r1_0.status,r1_0.type from rooms r1_0 where r1_0.id=?
+Hibernate: insert into rooms (price,status,type,id) values (?,?,?,?)
+Hibernate: select r1_0.id,r1_0.price,r1_0.status,r1_0.type from rooms r1_0 where r1_0.id=?
+Hibernate: insert into rooms (price,status,type,id) values (?,?,?,?)
+Hibernate: select r1_0.id,r1_0.price,r1_0.status,r1_0.type from rooms r1_0 where r1_0.id=?
+Hibernate: insert into rooms (price,status,type,id) values (?,?,?,?)
+Hibernate: select r1_0.id,r1_0.price,r1_0.status,r1_0.type from rooms r1_0 where r1_0.id=?
+Hibernate: insert into rooms (price,status,type,id) values (?,?,?,?)
+Hibernate: select r1_0.id,r1_0.price,r1_0.status,r1_0.type from rooms r1_0 where r1_0.id=?
+Hibernate: insert into rooms (price,status,type,id) values (?,?,?,?)
+Hibernate: select r1_0.id,r1_0.price,r1_0.status,r1_0.type from rooms r1_0 where r1_0.id=?
+Hibernate: insert into rooms (price,status,type,id) values (?,?,?,?)
+Hibernate: select r1_0.id,r1_0.price,r1_0.status,r1_0.type from rooms r1_0 where r1_0.id=?
+Hibernate: insert into rooms (price,status,type,id) values (?,?,?,?)
+Hibernate: select r1_0.id,r1_0.price,r1_0.status,r1_0.type from rooms r1_0 where r1_0.id=?
+Hibernate: insert into rooms (price,status,type,id) values (?,?,?,?)
+Preloaded 8 default rooms (101-104, 201-204)
+2026-05-25T02:12:40.363+05:30  INFO 45806 --- [room-service] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-05-25T02:12:40.366+05:30  INFO 45806 --- [room-service] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-05-25T02:12:40.367+05:30  INFO 45806 --- [room-service] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-05-25T02:12:40.367+05:30  INFO 45806 --- [room-service] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-05-25T02:12:40.367+05:30  INFO 45806 --- [room-service] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-05-25T02:12:40.367+05:30  INFO 45806 --- [room-service] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2026-05-25T02:12:40.367+05:30  INFO 45806 --- [room-service] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-05-25T02:12:40.403+05:30  INFO 45806 --- [room-service] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-05-25T02:14:22.026+05:30  INFO 45806 --- [room-service] [nio-8085-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-25T02:14:22.027+05:30  INFO 45806 --- [room-service] [nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-05-25T02:14:22.031+05:30  INFO 45806 --- [room-service] [nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+Hibernate: select r1_0.id,r1_0.price,r1_0.status,r1_0.type from rooms r1_0
+Hibernate: select r1_0.id,r1_0.price,r1_0.status,r1_0.type from rooms r1_0
+Hibernate: select r1_0.id,r1_0.price,r1_0.status,r1_0.type from rooms r1_0
+Hibernate: select r1_0.id,r1_0.price,r1_0.status,r1_0.type from rooms r1_0
+Hibernate: select r1_0.id,r1_0.price,r1_0.status,r1_0.type from rooms r1_0
+Hibernate: select r1_0.id,r1_0.price,r1_0.status,r1_0.type from rooms r1_0
+Hibernate: select r1_0.id,r1_0.price,r1_0.status,r1_0.type from rooms r1_0
+Hibernate: select r1_0.id,r1_0.price,r1_0.status,r1_0.type from rooms r1_0
+Hibernate: select r1_0.id,r1_0.price,r1_0.status,r1_0.type from rooms r1_0 where r1_0.id=?
+Hibernate: update rooms set price=?,status=?,type=? where id=?
+Hibernate: select r1_0.id,r1_0.price,r1_0.status,r1_0.type from rooms r1_0
+Hibernate: select r1_0.id,r1_0.price,r1_0.status,r1_0.type from rooms r1_0
+Hibernate: select r1_0.id,r1_0.price,r1_0.status,r1_0.type from rooms r1_0
+Hibernate: select r1_0.id,r1_0.price,r1_0.status,r1_0.type from rooms r1_0
+Hibernate: select r1_0.id,r1_0.price,r1_0.status,r1_0.type from rooms r1_0
+2026-05-25T02:17:09.503+05:30  INFO 45806 --- [room-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+Hibernate: select r1_0.id,r1_0.price,r1_0.status,r1_0.type from rooms r1_0
+2026-05-25T02:22:09.511+05:30  INFO 45806 --- [room-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+Hibernate: select r1_0.id,r1_0.price,r1_0.status,r1_0.type from rooms r1_0
+Hibernate: select r1_0.id,r1_0.price,r1_0.status,r1_0.type from rooms r1_0
+Hibernate: select r1_0.id,r1_0.price,r1_0.status,r1_0.type from rooms r1_0
+Hibernate: select r1_0.id,r1_0.price,r1_0.status,r1_0.type from rooms r1_0
+Hibernate: select r1_0.id,r1_0.price,r1_0.status,r1_0.type from rooms r1_0
+Hibernate: select r1_0.id,r1_0.price,r1_0.status,r1_0.type from rooms r1_0
+Hibernate: select r1_0.id,r1_0.price,r1_0.status,r1_0.type from rooms r1_0 where r1_0.id=?
+Hibernate: update rooms set price=?,status=?,type=? where id=?
+Hibernate: select r1_0.id,r1_0.price,r1_0.status,r1_0.type from rooms r1_0
+Hibernate: select r1_0.id,r1_0.price,r1_0.status,r1_0.type from rooms r1_0
+2026-05-25T02:27:09.524+05:30  INFO 45806 --- [room-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-05-25T02:32:09.541+05:30  INFO 45806 --- [room-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+Hibernate: select r1_0.id,r1_0.price,r1_0.status,r1_0.type from rooms r1_0
+2026-05-25T02:37:09.553+05:30  INFO 45806 --- [room-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+Hibernate: select r1_0.id,r1_0.price,r1_0.status,r1_0.type from rooms r1_0
+2026-05-25T02:42:09.566+05:30  INFO 45806 --- [room-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration

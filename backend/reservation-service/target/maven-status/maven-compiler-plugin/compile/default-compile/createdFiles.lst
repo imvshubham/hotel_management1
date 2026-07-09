@@ -1,0 +1,11 @@
+com/hotel/reservation/dto/BillingResponse.class
+com/hotel/reservation/dto/BillingRequest$BillingRequestBuilder.class
+com/hotel/reservation/client/BillingClient.class
+com/hotel/reservation/repository/ReservationRepository.class
+com/hotel/reservation/controller/ReservationController.class
+com/hotel/reservation/ReservationServiceApplication.class
+com/hotel/reservation/entity/Reservation.class
+com/hotel/reservation/client/RoomClient.class
+com/hotel/reservation/dto/RoomDto.class
+com/hotel/reservation/dto/BillingRequest.class
+com/hotel/reservation/entity/Reservation$ReservationBuilder.class
